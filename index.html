@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>南一高二上數學 A｜第二次段考複習 2-1～2-3</title>
+<meta name="description" content="南一版高二上數學 A 第二次段考複習：指數函數、對數與對數律、對數函數，14 個重點與 28 題自編代表題，詳解按鈕展開。">
+<meta name="author" content="盧政良">
+<meta name="theme-color" content="#F6F1E6">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+<script defer src="main.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到內容</a>
+<header class="hero">
+<div class="wrap">
+<p class="eyebrow">南一版・高二上・數學 A</p>
+<h1>第二次段考複習<span>2-1～2-3 指數與對數</span></h1>
+<p class="lead">範圍：2-1 指數函數、2-2 對數與對數律、2-3 對數函數。共 14 個重點、28 題代表題；每個重點依基礎、常見變化到整合安排。</p>
+<p class="notice"><strong>說明</strong>題目皆依常見考法自編，非課本原題或歷屆題，也不是依出題頻率統計選出。</p>
+<p class="howto">每題先自己作答，再按「顯示答案與詳解」對照。</p>
+</div>
+</header>
+<nav class="topnav" aria-label="章節導覽">
+<div class="wrap topnav-inner">
+<div class="chips"><a class="chip" href="#ch2_1"><span class="chip-num">2-1</span><span class="chip-title">指數函數</span></a><a class="chip" href="#ch2_2"><span class="chip-num">2-2</span><span class="chip-title">對數與對數律</span></a><a class="chip" href="#ch2_3"><span class="chip-num">2-3</span><span class="chip-title">對數函數</span></a></div>
+<button type="button" id="collapse-all" class="collapse-all">全部收合</button>
+</div>
+</nav>
+<main id="main" class="wrap">
+<section class="chapter" id="ch2_1" aria-labelledby="ch2_1-h"><header class="chapter-head"><p class="chapter-num">2-1</p><h2 id="ch2_1-h">指數函數</h2><ol class="toc"><li><a href="#pt1">重點 1｜實數指數與指數律</a></li><li><a href="#pt2">重點 2｜指數函數的限制、單調性與平移</a></li><li><a href="#pt3">重點 3｜指數方程式：同底與代換</a></li><li><a href="#pt4">重點 4｜指數不等式與區間</a></li><li><a href="#pt5">重點 5｜按比例成長與衰退</a></li></ol></header><article class="point" id="pt1" aria-labelledby="pt1-h"><h3 id="pt1-h"><span class="pt-tag">重點 1</span>實數指數與指數律</h3><div class="point-body"><p>正底數 $a&gt;0$ 的實數次方可運用以下規則：</p><div class="display-math">$$a^u a^v=a^{u+v},\qquad \frac{a^u}{a^v}=a^{u-v},\qquad (a^u)^v=a^{uv}.$$</div><p>另有 $a^0=1$、$a^{-u}=1/a^u$、$a^{m/n}=\sqrt[n]{a^m}$。使用任意實數次方時，底數取正數，避免負底數搭配無理數指數的問題。</p></div><div class="q" id="q01">
+<div class="q-meta"><span class="q-id">Q01</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">計算 $27^{2/3}\times 9^{-1/2}$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q01-sol">顯示答案與詳解</button>
+<div class="sol" id="q01-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>分數指數與負指數</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$3$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>$27^{2/3}=(\sqrt[3]{27})^2=3^2=9$。</li><li>$9^{-1/2}=1/\sqrt9=1/3$。</li><li>相乘得 $9\times 1/3=3$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>負指數表示倒數，不表示結果是負數。</p></div>
+</div>
+</div><div class="q" id="q02">
+<div class="q-meta"><span class="q-id">Q02</span><span class="lv lv-var">常見變化</span></div>
+<p class="q-stem">設 $a&gt;0$，化簡 $\dfrac{a^{3/2}a^{-1/4}}{a^{1/2}}$，並在 $a=16$ 時求值。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q02-sol">顯示答案與詳解</button>
+<div class="sol" id="q02-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>含未知量的指數化簡</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$a^{3/4}$；代入後為 $8$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>同底數相乘加指數、相除減指數，得 $a^{3/2-1/4-1/2}=a^{3/4}$。</li><li>$16^{3/4}=(\sqrt[4]{16})^3=2^3=8$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>不要把指數相乘；分母的指數要扣除。</p></div>
+</div>
+</div></article><article class="point" id="pt2" aria-labelledby="pt2-h"><h3 id="pt2-h"><span class="pt-tag">重點 2</span>指數函數的限制、單調性與平移</h3><div class="point-body"><p>指數函數 $y=a^x$ 須滿足 $a&gt;0$ 且 $a\ne1$。定義域為 $\mathbb R$，值域為 $(0,\infty)$，通過 $(0,1)$，水平漸近線是 $y=0$。$a&gt;1$ 時遞增，$0&lt;a&lt;1$ 時遞減。</p><p>$y=a^{x-h}+k$ 是向右移 $h$、向上移 $k$，值域 $(k,\infty)$，水平漸近線 $y=k$。這裡係數為正；若有負係數需另處理上下翻轉。</p></div><div class="q" id="q03">
+<div class="q-meta"><span class="q-id">Q03</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">求 $f(x)=2^{x-1}-3$ 的定義域、值域、水平漸近線及與兩座標軸的交點。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q03-sol">顯示答案與詳解</button>
+<div class="sol" id="q03-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>平移後的圖形性質</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>定義域 $\mathbb R$；值域 $(-3,\infty)$；漸近線 $y=-3$；$x$ 軸交點 $(1+\log_2 3,0)$；$y$ 軸交點 $(0,-5/2)$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>$2^{x-1}$ 對所有實數有定義且恆正，故 $f(x)&gt;-3$，又能取所有大於 $-3$ 的值。</li><li>由 $y=2^x$ 右移 $1$、下移 $3$，漸近線成為 $y=-3$。</li><li>令 $f(x)=0$：$2^{x-1}=3$，故 $x=1+\log_2 3$。（可先保留「$2^{x-1}=3$ 的唯一解」，學完 2-2 再寫成對數。）</li><li>代入 $x=0$：$2^{-1}-3=-5/2$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>漸近線不是函數能取到的最低值；值域不能含 $-3$。</p></div>
+</div>
+</div><div class="q" id="q04">
+<div class="q-meta"><span class="q-id">Q04</span><span class="lv lv-var">常見變化</span></div>
+<p class="q-stem">將 $A=(1/3)^{-1}$、$B=(1/3)^{1/2}$、$C=(1/3)^2$ 由小到大排列。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q04-sol">顯示答案與詳解</button>
+<div class="sol" id="q04-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>底數小於 1 的大小比較</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$C&lt;B&lt;A$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>指數大小為 $-1&lt;1/2&lt;2$。</li><li>因 $0&lt;1/3&lt;1$，函數隨指數增加而減少，因此順序反過來。</li><li>也可算得 $A=3$、$B=1/\sqrt3$、$C=1/9$ 核對。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>同底比較前一定先判斷底數大於 1 或介於 0 與 1。</p></div>
+</div>
+</div></article><article class="point" id="pt3" aria-labelledby="pt3-h"><h3 id="pt3-h"><span class="pt-tag">重點 3</span>指數方程式：同底與代換</h3><div class="point-body"><p>若 $a&gt;0$、$a\ne1$，則 $a^{u}=a^{v}$ 等價於 $u=v$。遇到 $a^{2x}$ 與 $a^x$ 可設 $t=a^x$，化成二次方程；但必須保留 $t&gt;0$。</p></div><div class="q" id="q05">
+<div class="q-meta"><span class="q-id">Q05</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">解 $4^{x-1}=8^{2x-3}$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q05-sol">顯示答案與詳解</button>
+<div class="sol" id="q05-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>化為相同底數</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$x=7/4$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>化成底數 $2$：$2^{2x-2}=2^{6x-9}$。</li><li>比較指數：$2x-2=6x-9$。</li><li>得 $4x=7$，故 $x=7/4$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>$(2^3)^{2x-3}=2^{6x-9}$，整個括號都要乘 3。</p></div>
+</div>
+</div><div class="q" id="q06">
+<div class="q-meta"><span class="q-id">Q06</span><span class="lv lv-var">常見變化</span></div>
+<p class="q-stem">解 $9^x-2\cdot3^x-3=0$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q06-sol">顯示答案與詳解</button>
+<div class="sol" id="q06-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>代換後排除負根</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$x=1$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>設 $t=3^x&gt;0$，則 $9^x=t^2$。</li><li>$t^2-2t-3=(t-3)(t+1)=0$，得到 $t=3$ 或 $-1$。</li><li>$t=-1$ 違反 $t&gt;0$，捨去；由 $3^x=3$ 得 $x=1$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>代換所得的二次方程根不一定都能還原成實數 $x$。</p></div>
+</div>
+</div></article><article class="point" id="pt4" aria-labelledby="pt4-h"><h3 id="pt4-h"><span class="pt-tag">重點 4</span>指數不等式與區間</h3><div class="point-body"><p>底數大於 1 時同底比較保留不等號；底數介於 0 與 1 時需反向。若代換成 $t=a^x$，先解 $t$ 的不等式，再與 $t&gt;0$ 取交集，最後還原成 $x$。</p></div><div class="q" id="q07">
+<div class="q-meta"><span class="q-id">Q07</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">解 $(1/2)^{2x-1}\ge8$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q07-sol">顯示答案與詳解</button>
+<div class="sol" id="q07-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>遞減函數的不等號</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$x\le-1$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>寫成 $8=(1/2)^{-3}$。</li><li>底數小於 1，故 $2x-1\le-3$。</li><li>得 $2x\le-2$，即 $x\le-1$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>這裡因函數遞減而反向，不是因為指數有負數。</p></div>
+</div>
+</div><div class="q" id="q08">
+<div class="q-meta"><span class="q-id">Q08</span><span class="lv lv-int">整合</span></div>
+<p class="q-stem">解 $4^x-5\cdot2^x+4\le0$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q08-sol">顯示答案與詳解</button>
+<div class="sol" id="q08-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>二次代換與指數區間</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$0\le x\le2$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>設 $t=2^x&gt;0$，則 $(t-1)(t-4)\le0$。</li><li>二次式開口向上，解為 $1\le t\le4$，已符合正值限制。</li><li>$1\le2^x\le4$，即 $2^0\le2^x\le2^2$。</li><li>由遞增性得 $0\le x\le2$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>不要把乘積小於等於零解成區間外側。</p></div>
+</div>
+</div></article><article class="point" id="pt5" aria-labelledby="pt5-h"><h3 id="pt5-h"><span class="pt-tag">重點 5</span>按比例成長與衰退</h3><div class="point-body"><p>每隔一個固定時間乘上固定倍率 $r&gt;0$，可建模為 $N(t)=N_0r^t$，其中 $t$ 是經過的期數；每期增加 $p\%$ 時 $r=1+p/100$，每期減少 $p\%$ 時 $r=1-p/100$。半衰期為 $T$ 時 $N(t)=N_0(1/2)^{t/T}$。這裡只處理離散倍率與半衰期，不引入微積分或連續複利。</p></div><div class="q" id="q09">
+<div class="q-meta"><span class="q-id">Q09</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">某培養物起初有 $500$ 個單位，每小時變成前一小時的 $1.2$ 倍。求 $3$ 小時後的數量（本題以模型的實數值計）。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q09-sol">顯示答案與詳解</button>
+<div class="sol" id="q09-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>成長倍率與期數</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$864$ 個單位。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>經過 $3$ 個一小時，需乘 $1.2$ 三次。</li><li>$N(3)=500(1.2)^3=500\times1.728=864$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>每期增加 20% 不是每期固定增加最初數量的 20%。</p></div>
+</div>
+</div><div class="q" id="q10">
+<div class="q-meta"><span class="q-id">Q10</span><span class="lv lv-var">常見變化</span></div>
+<p class="q-stem">某物質起初有 $160$ 毫克，半衰期為 $3$ 小時。至少經過幾小時，剩餘量才會不超過 $20$ 毫克？時間允許為非負實數。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q10-sol">顯示答案與詳解</button>
+<div class="sol" id="q10-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>半衰期與臨界時間</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>至少 $9$ 小時。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>剩餘量為 $160(1/2)^{t/3}$，其中 $t\ge0$。</li><li>要求 $(1/2)^{t/3}\le1/8=(1/2)^3$。</li><li>因函數遞減，$t/3\ge3$，所以 $t\ge9$。</li><li>在 $t=9$ 時恰剩 $20$ 毫克。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>「不超過」包含恰好等於；半衰期是 3 小時，指數不是直接寫成 $t$。</p></div>
+</div>
+</div></article></section><section class="chapter" id="ch2_2" aria-labelledby="ch2_2-h"><header class="chapter-head"><p class="chapter-num">2-2</p><h2 id="ch2_2-h">對數與對數律</h2><ol class="toc"><li><a href="#pt6">重點 6｜對數定義與有意義的條件</a></li><li><a href="#pt7">重點 7｜對數運算律與使用前提</a></li><li><a href="#pt8">重點 8｜換底公式與連鎖消去</a></li><li><a href="#pt9">重點 9｜常用對數、科學記號與位數</a></li></ol></header><article class="point" id="pt6" aria-labelledby="pt6-h"><h3 id="pt6-h"><span class="pt-tag">重點 6</span>對數定義與有意義的條件</h3><div class="point-body"><div class="display-math">$$\log_a b=c\iff a^c=b,\qquad a&gt;0,\ a\ne1,\ b&gt;0.$$</div><p>其中 $a$ 是底數、$b$ 是真數。$\log_a1=0$、$\log_aa=1$。真數不可為零或負數；底數也不可為零、負數或 1。</p></div><div class="q" id="q11">
+<div class="q-meta"><span class="q-id">Q11</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">求 $\log_{1/2}8$ 及 $\log_9 3$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q11-sol">顯示答案與詳解</button>
+<div class="sol" id="q11-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>指數與對數互換</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>分別為 $-3$、$1/2$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>$(1/2)^{-3}=8$，故第一個對數是 $-3$。</li><li>$9^{1/2}=3$，故第二個對數是 $1/2$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>底數小於 1 的對數也可以有定義；對數值可以是負數。</p></div>
+</div>
+</div><div class="q" id="q12">
+<div class="q-meta"><span class="q-id">Q12</span><span class="lv lv-var">常見變化</span></div>
+<p class="q-stem">求 $\log_{x-1}(5-x)$ 有意義時的實數 $x$ 範圍。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q12-sol">顯示答案與詳解</button>
+<div class="sol" id="q12-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>底數與真數同時含變數</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$(1,2)\cup(2,5)$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>底數正：$x-1&gt;0$，得 $x&gt;1$。</li><li>底數不為 1：$x-1\ne1$，得 $x\ne2$。</li><li>真數正：$5-x&gt;0$，得 $x&lt;5$。</li><li>三項條件交集為 $1&lt;x&lt;5$ 且 $x\ne2$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>只檢查真數不夠；$x=2$ 會使底數等於 1。</p></div>
+</div>
+</div></article><article class="point" id="pt7" aria-labelledby="pt7-h"><h3 id="pt7-h"><span class="pt-tag">重點 7</span>對數運算律與使用前提</h3><div class="point-body"><p>對 $a&gt;0$、$a\ne1$、$M&gt;0$、$N&gt;0$：</p><div class="display-math">$$\log_a(MN)=\log_aM+\log_aN,$$</div><div class="display-math">$$\log_a(M/N)=\log_aM-\log_aN,\qquad \log_a(M^r)=r\log_aM.$$</div><p>沒有 $\log_a(M+N)=\log_aM+\log_aN$ 這種法則。拆成兩個實數對數前，須確保拆出的真數都為正。</p></div><div class="q" id="q13">
+<div class="q-meta"><span class="q-id">Q13</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">計算 $\log_2 12+\log_2 6-\log_2 9$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q13-sol">顯示答案與詳解</button>
+<div class="sol" id="q13-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>乘除與次方合併</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$3$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>各真數均為正，可合併為 $\log_2(12\times6/9)$。</li><li>括號內為 $8$，故結果是 $\log_2 8=3$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>對數相加對應真數相乘，不是真數相加。</p></div>
+</div>
+</div><div class="q" id="q14">
+<div class="q-meta"><span class="q-id">Q14</span><span class="lv lv-var">常見變化</span></div>
+<p class="q-stem">已知 $p=\log_2 3$，用 $p$ 表示 $\log_2(\sqrt{27}/4)$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q14-sol">顯示答案與詳解</button>
+<div class="sol" id="q14-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>已知對數求複合量</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$\dfrac32p-2$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>$\sqrt{27}=3^{3/2}$。</li><li>$\log_2(3^{3/2}/4)=\frac32\log_2 3-\log_2 4$。</li><li>代入已知得 $\frac32p-2$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>根號會使指數乘上 $1/2$；除以 4 對應減去 2，不是除以 2。</p></div>
+</div>
+</div></article><article class="point" id="pt8" aria-labelledby="pt8-h"><h3 id="pt8-h"><span class="pt-tag">重點 8</span>換底公式與連鎖消去</h3><div class="point-body"><p>對合法底數 $a,b,c$ 及正真數 $u$，</p><div class="display-math">$$\log_a u=\frac{\log_cu}{\log_ca}.$$</div><p>因此 $\log_a b=1/\log_b a$（$b\ne1$），且 $\log_a b\cdot\log_b u=\log_a u$。換底後應留意分母不能是零。</p></div><div class="q" id="q15">
+<div class="q-meta"><span class="q-id">Q15</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">計算 $(\log_2 9)(\log_3 8)$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q15-sol">顯示答案與詳解</button>
+<div class="sol" id="q15-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>換底與乘積</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$6$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>$\log_2 9=2\log_2 3$，$\log_3 8=3\log_3 2$。</li><li>乘積為 $6\log_2 3\log_3 2$。</li><li>互為倒數的兩項乘積是 1，故結果為 6。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>兩個對數相乘不能直接把真數相乘；要先換底或辨識連鎖關係。</p></div>
+</div>
+</div><div class="q" id="q16">
+<div class="q-meta"><span class="q-id">Q16</span><span class="lv lv-int">整合</span></div>
+<p class="q-stem">解 $\log_2 x+\log_x 2=5/2$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q16-sol">顯示答案與詳解</button>
+<div class="sol" id="q16-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>含變底數的方程式</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$x=4$ 或 $x=\sqrt2$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>定義限制為 $x&gt;0$ 且 $x\ne1$。</li><li>設 $t=\log_2x$，則 $t\ne0$ 且 $\log_x2=1/t$。</li><li>$t+1/t=5/2$，乘 $2t$ 得 $2t^2-5t+2=0$。</li><li>$(2t-1)(t-2)=0$，所以 $t=1/2$ 或 $2$。</li><li>還原 $x=2^{1/2}$ 或 $2^2$，均符合限制。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>代換後不要忘記還原 $x$；乘上 $t$ 前需知道 $t\ne0$。</p></div>
+</div>
+</div></article><article class="point" id="pt9" aria-labelledby="pt9-h"><h3 id="pt9-h"><span class="pt-tag">重點 9</span>常用對數、科學記號與位數</h3><div class="point-body"><p>本教材未標底的 $\log$ 一律表示 $\log_{10}$。若正整數 $N$ 有 $k$ 位，則</p><div class="display-math">$$10^{k-1}\le N&lt;10^k\iff k-1\le\log N&lt;k.$$</div><p>所以位數為 $\lfloor\log N\rfloor+1$。給定近似對數時，須確認誤差不會跨越整數邊界；本組數據離邊界足夠遠。</p></div><div class="q" id="q17">
+<div class="q-meta"><span class="q-id">Q17</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">已知 $\log 2\approx0.30103$，求 $2^{50}$ 的十進位位數。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q17-sol">顯示答案與詳解</button>
+<div class="sol" id="q17-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>大整數的位數</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$16$ 位。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>$\log(2^{50})=50\log2\approx15.0515$。</li><li>因而 $10^{15}&lt;2^{50}&lt;10^{16}$，共有 16 位。</li><li>這裡近似值離兩端甚遠，不影響位數判定。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>對數的整數部分是「位數減一」，不是位數本身。</p></div>
+</div>
+</div><div class="q" id="q18">
+<div class="q-meta"><span class="q-id">Q18</span><span class="lv lv-var">常見變化</span></div>
+<p class="q-stem">已知 $\log2\approx0.30103$，求 $2^{-20}$ 的小數點後第幾位首次出現非零數字。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q18-sol">顯示答案與詳解</button>
+<div class="sol" id="q18-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>小數首個非零數字的位置</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>第 $7$ 位。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>$\log(2^{-20})\approx-6.0206$，所以 $-7&lt;\log(2^{-20})&lt;-6$。</li><li>得 $10^{-7}&lt;2^{-20}&lt;10^{-6}$。</li><li>此範圍的數小數點後前六位是零，第七位才非零，例如其值約為 $0.000000953674$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>負數向下取整時 $\lfloor-6.0206\rfloor=-7$，不是 $-6$。</p></div>
+</div>
+</div></article></section><section class="chapter" id="ch2_3" aria-labelledby="ch2_3-h"><header class="chapter-head"><p class="chapter-num">2-3</p><h2 id="ch2_3-h">對數函數</h2><ol class="toc"><li><a href="#pt10">重點 10｜對數圖形、定義域、值域與平移</a></li><li><a href="#pt11">重點 11｜對數方程式先檢核定義域</a></li><li><a href="#pt12">重點 12｜以對數值為未知量的代換</a></li><li><a href="#pt13">重點 13｜對數不等式與真數限制的交集</a></li><li><a href="#pt14">重點 14｜綜合：圖形資訊、代換與範圍</a></li></ol></header><article class="point" id="pt10" aria-labelledby="pt10-h"><h3 id="pt10-h"><span class="pt-tag">重點 10</span>對數圖形、定義域、值域與平移</h3><div class="point-body"><p>$y=\log_a x$ 的條件是 $a&gt;0$、$a\ne1$、$x&gt;0$。定義域 $(0,\infty)$，值域 $\mathbb R$，通過 $(1,0)$，垂直漸近線 $x=0$。$a&gt;1$ 遞增；$0&lt;a&lt;1$ 遞減。$y=\log_a(x-h)+k$ 的定義域為 $(h,\infty)$，垂直漸近線是 $x=h$，值域仍為 $\mathbb R$。</p></div><div class="q" id="q19">
+<div class="q-meta"><span class="q-id">Q19</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">求 $f(x)=\log_2(x-1)+3$ 的定義域、值域、垂直漸近線、$x$ 軸交點，並判斷是否有 $y$ 軸交點。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q19-sol">顯示答案與詳解</button>
+<div class="sol" id="q19-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>平移後求交點</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>定義域 $(1,\infty)$；值域 $\mathbb R$；漸近線 $x=1$；$x$ 軸交點 $(9/8,0)$；沒有 $y$ 軸交點。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>真數正要求 $x-1&gt;0$，即 $x&gt;1$。</li><li>由 $\log_2x$ 右移 1、上移 3，值域不變，漸近線右移成 $x=1$。</li><li>令函數值為零，$\log_2(x-1)=-3$，得 $x-1=1/8$，故 $x=9/8$。</li><li>$x=0$ 不在定義域，沒有 $y$ 軸交點。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>$x$ 軸交點需令 $y=0$；不是把真數設為零。</p></div>
+</div>
+</div><div class="q" id="q20">
+<div class="q-meta"><span class="q-id">Q20</span><span class="lv lv-var">常見變化</span></div>
+<p class="q-stem">求 $g(x)=\log_{1/3}(x+2)$ 在 $-1\le x\le7$ 的值域。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q20-sol">顯示答案與詳解</button>
+<div class="sol" id="q20-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>遞減性與有限區間值域</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$[-2,0]$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>指定區間內 $1\le x+2\le9$，均符合真數正的限制。</li><li>底數 $1/3$ 小於 1，函數遞減，最大值在 $x=-1$，為 $\log_{1/3}1=0$。</li><li>最小值在 $x=7$，為 $\log_{1/3}9=-2$。</li><li>連續函數可取端點之間所有值，故值域為 $[-2,0]$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>遞減函數的最大值不在右端點。</p></div>
+</div>
+</div></article><article class="point" id="pt11" aria-labelledby="pt11-h"><h3 id="pt11-h"><span class="pt-tag">重點 11</span>對數方程式先檢核定義域</h3><div class="point-body"><p>同底對數相等可比較真數，但須保留原式全部真數大於零的條件。多個對數合併後可能放寬表面上的條件；因此必須把候選解代回原來的定義域。</p></div><div class="q" id="q21">
+<div class="q-meta"><span class="q-id">Q21</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">解 $\log_2(x-1)+\log_2(x-3)=3$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q21-sol">顯示答案與詳解</button>
+<div class="sol" id="q21-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>合併乘積後剔除假根</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$x=5$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>原式要求 $x&gt;3$。</li><li>合併得 $\log_2[(x-1)(x-3)]=3$，故 $(x-1)(x-3)=8$。</li><li>整理為 $x^2-4x-5=0$，即 $(x-5)(x+1)=0$。</li><li>候選解為 5 與 $-1$；只有 5 滿足 $x&gt;3$。</li><li>代回：$\log_24+\log_22=2+1=3$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>$x=-1$ 雖讓兩真數乘積為正，原來的兩個對數仍都無意義。</p></div>
+</div>
+</div><div class="q" id="q22">
+<div class="q-meta"><span class="q-id">Q22</span><span class="lv lv-var">常見變化</span></div>
+<p class="q-stem">解 $\log_3(x+1)-\log_3(x-1)=1$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q22-sol">顯示答案與詳解</button>
+<div class="sol" id="q22-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>對數相減與分式方程</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$x=2$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>定義域為 $x&gt;1$。</li><li>合併成 $\log_3\dfrac{x+1}{x-1}=1$，所以 $\dfrac{x+1}{x-1}=3$。</li><li>由 $x+1=3x-3$ 得 $x=2$。</li><li>此值合法，代回為 $\log_33-\log_31=1$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>原式是差，不是 $\log_3[(x+1)-(x-1)]$。</p></div>
+</div>
+</div></article><article class="point" id="pt12" aria-labelledby="pt12-h"><h3 id="pt12-h"><span class="pt-tag">重點 12</span>以對數值為未知量的代換</h3><div class="point-body"><p>遇到 $(\log_a x)^2$ 與 $\log_a x$ 可設 $t=\log_a x$；此時 $t$ 可為任意實數，而 $x=a^t$ 自動為正。注意 $\log_a(x^2)$ 與 $(\log_a x)^2$ 不同。</p></div><div class="q" id="q23">
+<div class="q-meta"><span class="q-id">Q23</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">解 $(\log_2x)^2-3\log_2x+2=0$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q23-sol">顯示答案與詳解</button>
+<div class="sol" id="q23-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>二次式還原</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$x=2$ 或 $4$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>定義域 $x&gt;0$，設 $t=\log_2x$。</li><li>$t^2-3t+2=(t-1)(t-2)=0$。</li><li>$t=1$ 或 2，還原得 $x=2^1=2$ 或 $x=2^2=4$。</li><li>兩者都符合定義域。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>$t=1,2$ 不是原題的 $x$ 解。</p></div>
+</div>
+</div><div class="q" id="q24">
+<div class="q-meta"><span class="q-id">Q24</span><span class="lv lv-int">整合</span></div>
+<p class="q-stem">解 $\log_2x\cdot\log_2(4x)=3$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q24-sol">顯示答案與詳解</button>
+<div class="sol" id="q24-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>先用對數律再代換</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$x=2$ 或 $1/8$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>原式要求 $x&gt;0$。</li><li>設 $t=\log_2x$，則 $\log_2(4x)=2+t$。</li><li>$t(t+2)=3$，即 $(t-1)(t+3)=0$。</li><li>$t=1$ 或 $-3$，故 $x=2$ 或 $2^{-3}=1/8$。</li><li>代回分別得到 $1\times3=3$、$(-3)\times(-1)=3$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>對數值 $t$ 可以是負數，不可像指數代換一樣誤加 $t&gt;0$。</p></div>
+</div>
+</div></article><article class="point" id="pt13" aria-labelledby="pt13-h"><h3 id="pt13-h"><span class="pt-tag">重點 13</span>對數不等式與真數限制的交集</h3><div class="point-body"><p>對合法同底數及正真數，$a&gt;1$ 時 $\log_a U&gt;\log_a V\iff U&gt;V$；$0&lt;a&lt;1$ 時不等號反向。移除對數後仍須與原定義域取交集。</p></div><div class="q" id="q25">
+<div class="q-meta"><span class="q-id">Q25</span><span class="lv lv-basic">基礎</span></div>
+<p class="q-stem">解 $\log_2(x-1)&lt;3$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q25-sol">顯示答案與詳解</button>
+<div class="sol" id="q25-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>常數化為同底對數</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$1&lt;x&lt;9$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>真數正要求 $x&gt;1$。</li><li>$3=\log_28$，底數大於 1，得 $x-1&lt;8$，即 $x&lt;9$。</li><li>交集是 $1&lt;x&lt;9$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>只寫 $x&lt;9$ 會把原式沒有定義的數也算進去。</p></div>
+</div>
+</div><div class="q" id="q26">
+<div class="q-meta"><span class="q-id">Q26</span><span class="lv lv-var">常見變化</span></div>
+<p class="q-stem">解 $\log_{1/2}(2x-1)\ge\log_{1/2}(x+2)$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q26-sol">顯示答案與詳解</button>
+<div class="sol" id="q26-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>底數小於 1 的複合真數</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$1/2&lt;x\le3$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>$2x-1&gt;0$ 與 $x+2&gt;0$ 合併為 $x&gt;1/2$。</li><li>因底數小於 1，不等號反向，得 $2x-1\le x+2$。</li><li>解得 $x\le3$，與定義域取交集得 $1/2&lt;x\le3$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>左端點不能包含；右端點可包含，因為原題允許相等。</p></div>
+</div>
+</div></article><article class="point" id="pt14" aria-labelledby="pt14-h"><h3 id="pt14-h"><span class="pt-tag">重點 14</span>綜合：圖形資訊、代換與範圍</h3><div class="point-body"><p>整合題先辨識「對數本身的值」和「真數」兩個層次，再用單調性或代換處理。由圖上已知點求參數時，先代點、改寫成指數式，再檢查底數限制。</p></div><div class="q" id="q27">
+<div class="q-meta"><span class="q-id">Q27</span><span class="lv lv-int">整合</span></div>
+<p class="q-stem">設 $f(x)=\log_a(x-h)$，其中 $a&gt;0$、$a\ne1$。已知圖形通過 $(3,0)$ 與 $(6,2)$，求 $a,h$，並求 $f(x)=1$ 時的 $x$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q27-sol">顯示答案與詳解</button>
+<div class="sol" id="q27-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>由圖上兩點決定函數</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$a=2$、$h=2$；$x=4$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>由 $f(3)=0$ 得 $3-h=a^0=1$，故 $h=2$。</li><li>由 $f(6)=2$ 得 $6-2=a^2$，即 $a^2=4$。</li><li>底數須正，故 $a=2$，不能取 $-2$。</li><li>$\log_2(x-2)=1$ 得 $x-2=2$，所以 $x=4$，符合 $x&gt;2$。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>求底數時即使平方方程有負根，負底數仍不合法。</p></div>
+</div>
+</div><div class="q" id="q28">
+<div class="q-meta"><span class="q-id">Q28</span><span class="lv lv-int">整合</span></div>
+<p class="q-stem">解 $(\log_2x)^2-\log_2x-2\le0$。</p>
+<button type="button" class="toggle" aria-expanded="false" aria-controls="q28-sol">顯示答案與詳解</button>
+<div class="sol" id="q28-sol" hidden>
+<p class="sol-topic"><span class="sol-label">考點</span>對數代換不等式</p>
+<div class="sol-ans"><span class="sol-label">答案</span><p>$1/2\le x\le4$。</p></div>
+<div class="sol-steps"><span class="sol-label">步驟詳解</span><ol><li>定義域為 $x&gt;0$，設 $t=\log_2x$。</li><li>$(t-2)(t+1)\le0$，故 $-1\le t\le2$。</li><li>由 $2^t$ 遞增，得 $2^{-1}\le x\le2^2$。</li><li>兩端點均為正且使原式等於零，可包含。</li></ol></div>
+<div class="sol-tip"><span class="sol-label">易錯提醒</span><p>代換後的區間 $[-1,2]$ 是 $t$ 的範圍，不是 $x$ 的範圍。</p></div>
+</div>
+</div></article></section>
+</main>
+<footer class="foot">
+<div class="wrap">
+<h2>範圍說明與來源</h2>
+<p>本頁範圍為南一版高二上數學 A 第二章 2-1～2-3。題目依常見考法自編，非課本原題或歷屆題。</p>
+<ol class="sources"><li>三貝德升學王，《115學年度108課綱高二上版本對照表：數學》，南一數學高二上 A 版欄。用於核對第二章及三節名稱，不用來宣稱題型出現頻率。<br><a href="https://www.go100.com.tw/file/108_version_compare/senior/108%E8%AA%B2%E7%B6%B1%E9%AB%98%E4%BA%8C%E4%B8%8A%E7%89%88%E6%9C%AC%E5%B0%8D%E7%85%A7%E8%A1%A8_%E6%95%B8%E5%AD%B8.pdf?v=20260828" target="_blank" rel="noopener">開啟來源連結</a></li><li>李韋朋（國立武陵高中），〈指對數函數的圖形關係〉，教育大市集，2025年上傳。資源列有指數函數及圖形、按比例成長與衰退、對數律及指數方程式等內容，用於交叉核對題型涵蓋面。<br><a href="https://market.cloud.edu.tw/resources/web/1842178" target="_blank" rel="noopener">開啟來源連結</a></li><li>臺北市政府教育局，〈對數換底公式〉，教育大市集，製作年份2015。用於核對換底主題。<br><a href="https://market.cloud.edu.tw/resources/video/1817693" target="_blank" rel="noopener">開啟來源連結</a></li><li>周紹文（永春高中），〈對數函數〉教案，教育部高中職行動學習輔導計畫／教育大市集。頁面介紹底數分情況、定義域、值域及單調性；本教材不延伸教案中的其他性質或活動。<br><a href="https://market.cloud.edu.tw/resources/web/1748075" target="_blank" rel="noopener">開啟來源連結</a></li><li>教育部委辦計畫，〈A-11A-4-S03E〉，教育大市集，製作年份2023。頁面標示學習內容 A-11A-4：對數律及其基本應用、求解指數方程式。用於課綱層級核對。<br><a href="https://market.cloud.edu.tw/resources/video/1852523" target="_blank" rel="noopener">開啟來源連結</a></li></ol>
+<p>以上來源是範圍與教學主題佐證，不表示出版社逐題審定，也不表示本教材涵蓋學校自行加入的所有段考內容。所有題幹、數據與解說均自行編寫；不複製來源題目、圖像或講義。未引入向量、三角進階、微積分、連續複利及自然對數專題。圖形、代數與模型題共同支援三節複習；若校內另有增刪，以教師公布範圍為準。</p>
+<p class="author">作者：盧政良</p>
+</div>
+</footer>
+</body>
+</html>
